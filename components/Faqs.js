@@ -4,7 +4,7 @@ const Item = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b">
+    <div className="border-b border-[#D6DAE4]">
       <button
         type="button"
         aria-label="Open item"
