@@ -1,6 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Header from '../components/header'
+import Price from '../components/Price'
+import Stats from '../components/Stats'
+import About from '../components/About'
+
+
+
+
 
 export default function Home() {
   return (
@@ -13,7 +19,49 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
+      <Stats />
+      <About />
+
+      <Price />
+
       <h2>Tempire</h2>
+
+      <header className="header">
+        <div className="header-main container d-flex">
+
+          <a href="#" className="header-logo default-icon">
+            <img src="assets/img/logo.svg" alt="logo company" />
+          </a>
+
+          <div className="navbar">
+
+            <nav className="main-navigation">
+              <ul className="menu">
+                <li className="menu-item  current-menu-item">
+                  <a href="#s-advantages">Our advantages</a>
+                </li>
+                <li className="menu-item">
+                  <a href="#s-about">About Us</a>
+                </li>
+                <li className="menu-item">
+                  <a href="#s-price">Prices / Subscription</a>
+                </li>
+
+                <li className="menu-item">
+                  <a href="#s-faq">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div className="burger js-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </header>
     </>
 
   )
