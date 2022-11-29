@@ -3,6 +3,9 @@ import Header from '../components/header'
 import Price from '../components/Price'
 import Stats from '../components/Stats'
 import About from '../components/About'
+import FAQs from '../components/Faqs'
+
+
 
 
 
@@ -24,6 +27,7 @@ export default function Home() {
       <About />
 
       <Price />
+      <FAQs />
 
       <h2>Tempire</h2>
 
