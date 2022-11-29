@@ -1,31 +1,22 @@
-
-import Header from '../components/Header'
-import Price from '../components/Price'
-import Stats from '../components/Stats'
-import About from '../components/About'
-import FAQs from '../components/Faqs'
-import Footer from '../components/Footer'
-
-
-
-
-
-
+import Header from '../components/header';
+import Stats from '../components/Stats';
+import About from '../components/About';
+import Pricing from '../components/Pricing';
+import FAQs from '../components/Faqs';
+import Footer from '../components/footer';
+import Slider from '../components/Hero_Slider';
 
 export default function Home() {
   return (
-
     <>
-
       <Header />
+      <Slider />
       <Stats />
       <About />
-      <Price />
+      <Pricing />
       <FAQs />
-
       <Footer />
 
     </>
-
   )
 }

@@ -1,150 +1,50 @@
-import React from 'react';
+import Image from 'next/image';
+import Img1 from '../public/images/ad_1.svg';
+import Img2 from '../public/images/ad_2.svg';
+
+
+export const StatsData = [
+  {
+    advIcon: Img1,
+    advValue: '42+',
+    advDesc: 'Voluptatem quia voluptas aspernatur aut odit aut fugit.',
+  },
+  {
+    advIcon: Img2,
+    advValue: '73%',
+    advDesc: 'Voluptatem quia voluptas aspernatur aut odit aut fugit',
+  },
+  {
+    advIcon: Img1,
+    advValue: '70+',
+    advDesc: 'Voluptatem quia voluptas aspernatur aut odit aut fugit. Voluptatem quia voluptas aspernatur aut odit aut fugit. Voluptatem quia voluptas aspernatur aut odit aut fugit.',
+  },
+  {
+    advIcon: Img2,
+    advValue: '235',
+    advDesc: 'Voluptatem quia voluptas aspernatur aut odit aut fugit. Voluptatem quia voluptas aspernatur aut odit aut fugit.',
+  },
+];
 
 export default function Stats() {
   return (
-    <>
-      <div className="bg-gray-100">
-        <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-          <div className="absolute inset-x-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
-            <svg
-              viewBox="0 0 88 88"
-              className="w-full max-w-screen-xl text-indigo-100"
-            >
-              <circle fill="currentColor" cx="44" cy="44" r="15.5" />
-              <circle
-                fillOpacity="0.2"
-                fill="currentColor"
-                cx="44"
-                cy="44"
-                r="44"
-              />
-              <circle
-                fillOpacity="0.2"
-                fill="currentColor"
-                cx="44"
-                cy="44"
-                r="37.5"
-              />
-              <circle
-                fillOpacity="0.3"
-                fill="currentColor"
-                cx="44"
-                cy="44"
-                r="29.5"
-              />
-              <circle
-                fillOpacity="0.3"
-                fill="currentColor"
-                cx="44"
-                cy="44"
-                r="22.5"
-              />
-            </svg>
+    <section className='bg-[rgba(253,205,96,0.3)] md:pt-[76px] md:pb-[63px] py-[43px] px-4'>
+      <div className='container mx-auto grid md:grid-cols-4 grid-cols-1 gap-10'>
+        {StatsData.map((data, i) => {
+          return <div>
+            <figure className='bg-[#FDCD60] w-[50px] h-[50px] flex justify-center items-center rounded-[3.5px] mb-[34px]'>
+              <Image src={data.advIcon} alt="Image" />
+            </figure>
+            <h3 className='text-[40px] leading-[48px] font-extrabold text-[#333333] mb-2'>
+              {data.advValue}
+            </h3>
+            <p className='text-base font-medium text-[#969696]'>
+              {data.advDesc}
+            </p>
           </div>
-          <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
-              <div className="p-5">
-                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-                <p className="mb-2 font-bold">Football Sports</p>
-                <p className="text-sm leading-5 text-gray-900">
-                  Sed ut perspiciatis unde omnis iste. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit.
-                </p>
-              </div>
-              <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-            </div>
-            <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
-              <div className="p-5">
-                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-                <p className="mb-2 font-bold">Bowling Sports</p>
-                <p className="text-sm leading-5 text-gray-900">
-                  Disrupt inspire and think tank, social entrepreneur but
-                  preliminary thinking think tank compelling.
-                </p>
-              </div>
-              <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-            </div>
-            <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
-              <div className="p-5">
-                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-                <p className="mb-2 font-bold">Cycling Sports</p>
-                <p className="text-sm leading-5 text-gray-900">
-                  A slice of heaven. O for awesome, this chocka full cuzzie is
-                  as rip-off as a cracker.
-                </p>
-              </div>
-              <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-            </div>
-            <div className="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
-              <div className="p-5">
-                <div className="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-                <p className="mb-2 font-bold">Weight Lifting Sports</p>
-                <p className="text-sm leading-5 text-gray-900">
-                  Meanwhile, in behind the bicycle shed, Hercules Morse, as big
-                  as a horse.
-                </p>
-              </div>
-              <div className="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
-            </div>
-          </div>
-        </div>
+        })}
+
       </div>
-    </>
+    </section>
   );
 }

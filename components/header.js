@@ -1,29 +1,70 @@
-import React from 'react';
 import Image from 'next/image';
-import Head from 'next/head';
+import Link from 'next/link';
+import { useState } from 'react';
+import Logo from '../public/images/logo.svg';
+
+function MobileNav({ open, setOpen }) {
+  return (
+    <div className={`absolute top-16 left-0 h-screen w-screen bg-[#F8F8F8] z-50 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
+      <div className="flex flex-col ml-4">
+        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+          className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
+          Our advantages
+        </Link>
+        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+          className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
+          About Us
+        </Link>
+        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+          className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
+          Prices / Subscription
+        </Link>
+        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+          className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
+          FAQ
+        </Link>
+      </div>
+    </div>
+  )
+}
 
 export default function Header() {
-  return (
-    <>
-      <Head>
-        <title>Tempire </title>
-        <meta name="description" content="Tempire" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="/images/logo.svg" alt="" width="250px" height="60" />
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">Our advantages</a>
-            <a class="mr-5 hover:text-gray-900">About Us</a>
-            <a class="mr-5 hover:text-gray-900">Prices / Subscription</a>
-            <a class="mr-5 hover:text-gray-900">FAQ</a>
-          </nav>
+  const [open, setOpen] = useState(false)
+  return (
+    <nav className="flex container mx-auto bg-white px-4 md:pt-[34px] md:pb-[31px] pt-[23px] pb-[21px] items-center">
+      <MobileNav open={open} setOpen={setOpen} />
+      <div className="md:w-3/12 w-1/2 flex items-center">
+        <Link href="/">
+          <Image src={Logo} alt='Logo' className='md:w-full md:h-full w-[136px] h-[35px] '/>
+        </Link>
+      </div>
+      <div className="md:w-9/12 w-1/2 flex justify-end items-center">
+
+        <div className="z-50 flex relative w-6 h-6 flex-col justify-between items-center md:hidden" onClick={() => {
+          setOpen(!open)
+        }}>
+          {/* hamburger button */}
+          <span className={`h-[2px] w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "rotate-45 translate-y-3.5" : ""}`} />
+          <span className={`h-[2px] w-full bg-black rounded-lg transition-all duration-300 ease-in-out ${open ? "w-0" : "w-full"}`} />
+          <span className={`h-[2px] w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
         </div>
-      </header>
-    </>
-  );
+
+        <div className="hidden md:flex">
+          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+            Our advantages
+          </Link>
+          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+            About Us
+          </Link>
+          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+            Prices / Subscription
+          </Link>
+          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+            FAQ
+          </Link>
+        </div>
+      </div>
+    </nav>
+  )
 }
