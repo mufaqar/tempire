@@ -1,5 +1,5 @@
 
-function Plan({ name, price, period, tip, href, features, featured = false }) {
+function Plan({ name, price, period, tip, href, features, btnTxt, featured = false }) {
   return (
     <div className={`flex flex-col bg-white rounded-[10px]
     ${featured ? 'border-[5px] border-[#FDCD60]' : 'border border-[#D6DAE4] '}`}>
@@ -18,13 +18,13 @@ function Plan({ name, price, period, tip, href, features, featured = false }) {
           </p>
         </div>
         <ul
-          className={`order-last mt-10 space-y-3 text-sm', ${featured ? 'text-[#333333]' : 'text-[#333333]'}`}
+          className={`order-last space-y-3 text-sm', ${featured ? 'text-[#333333]' : 'text-[#333333]'}`}
         >
           {features.map((feature) => (
             <li key={feature} className="flex">
               <svg
                 aria-hidden="true"
-                className={`h-6 w-6 flex-none' ${featured ? 'fill-slate-400 stroke-slate-400' : 'fill-slate-400 stroke-slate-400'}`}
+                className={`h-8 w-8 flex-none' ${featured ? 'fill-slate-400 stroke-slate-400' : 'fill-slate-400 stroke-slate-400'}`}
               >
                 <path
                   d="M9.307 12.248a.75.75 0 1 0-1.114 1.004l1.114-1.004ZM11 15.25l-.557.502a.75.75 0 0 0 1.15-.043L11 15.25Zm4.844-5.041a.75.75 0 0 0-1.188-.918l1.188.918Zm-7.651 3.043 2.25 2.5 1.114-1.004-2.25-2.5-1.114 1.004Zm3.4 2.457 4.25-5.5-1.187-.918-4.25 5.5 1.188.918Z"
@@ -51,7 +51,7 @@ function Plan({ name, price, period, tip, href, features, featured = false }) {
           className={`border-2 border-[#FDCD60] rounded-[3px] p-[15px] text-base font-semibold my-[40px] ${featured ? 'bg-[#FDCD60] text-white' : 'bg-transparent hover:bg-[#FDCD60] text-[#FDCD60] hover:text-white'}`}
           aria-label={`Get started with ${name} plan for ${price}`}
         >
-          Get started
+          {btnTxt}
         </button>
       </div>
     </div>
@@ -60,57 +60,63 @@ function Plan({ name, price, period, tip, href, features, featured = false }) {
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-20 sm:py-32"
-    >
+    <section id="pricing" className="py-[86px] px-4 bg-[#f8f8f8]">
       <div className="container mx-auto">
         <div className="md:text-center">
-          <p className="font-display text-3xl tracking-tight text-[#333333] sm:text-4xl">
-            Save 10% If You Signup Before End of Year
-          </p>
-          <p className="mt-4 text-lg text-[#333333]">
-            Paid Monthly / Paid Annually
+          <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333]">
+          Try our best offer
+          </h2>
+          <p className="text-sm font-medium leading-[2] tracking-wide text-[#333333] mt-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
-        <div className='grid md:grid-cols-3 grid-cols-1 gap-8 mt-12 items-center'>
+        <div className='grid md:grid-cols-3 grid-cols-1 gap-10 mt-12 items-center'>
           <Plan
-            name="Starter"
-            price="$17"
-            period="\month"
-            description="The perfect plan for in-home centers. "
+            name="Free"
+            price="$1000"
+            period="/month"
+            description=""
             href="/register"
+            btnTxt="Try It"
             features={[
-              'Up to 10 Active Students / 1 Location',
-              'Automated Billing',
-              'Online Payments',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ]}
           />
           <Plan
             featured
-            name="Basic"
-            price="$40"
-            period="\month"
+            name="PRO"
+            price="$2500"
+            period="/month"
             tip="Most businesses start with PRO"
-            description="Most businesses start with PRO"
+            description=""
             href="/register"
+            btnTxt="Start Using"
             features={[
-              'Up to 20 Active Students / 1 Location',
-              'Digitzed Attendance',
-              'Everything included in Starter',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ]}
           />
           <Plan
-            name="Growth / Pro / Enterprise"
-            price="Custom"
-            period="\month"
-            description="Price the perfect plan for your center during the trial process."
+            name="PRO PLUS"
+            price="$2500"
+            period="/month"
+            description=""
             href="/register"
+            btnTxt="Try It"
             features={[
-              'Unlimited Active Students / Unlimited Locations',
-              'Parent Engagement',
-              'Forms',
-              'Scheduling',
-              'Everything included in Basic',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             ]}
           />
         </div>

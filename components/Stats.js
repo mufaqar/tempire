@@ -31,7 +31,7 @@ export default function Stats() {
     <section className='bg-[rgba(253,205,96,0.3)] md:pt-[76px] md:pb-[63px] py-[43px] px-4'>
       <div className='container mx-auto grid md:grid-cols-4 grid-cols-1 gap-10'>
         {StatsData.map((data, i) => {
-          return <div>
+          return <div key={i}>
             <figure className='bg-[#FDCD60] w-[50px] h-[50px] flex justify-center items-center rounded-[3.5px] mb-[34px]'>
               <Image src={data.advIcon} alt="Image" />
             </figure>

@@ -20,9 +20,8 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className='relative'>
-          <Image src={AboutImg} alt="Image" className='relative object-cover object-center h-full w-full rounded-[10px] z-10' />
-          <Image src={Dots} alt="Image" className='absolute'/>
+        <div className=''>
+          <Image src={AboutImg} alt="Image" className='relative object-cover object-center h-full w-full rounded-[10px]' />
         </div>
       </div>
     </section>
