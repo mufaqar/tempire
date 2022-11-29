@@ -7,19 +7,19 @@ function MobileNav({ open, setOpen }) {
   return (
     <div className={`absolute top-16 left-0 h-screen w-screen bg-[#F8F8F8] z-50 transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
       <div className="flex flex-col ml-4">
-        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        <Link href="#advantages" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
           className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
           Our advantages
         </Link>
-        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        <Link href="#about-us" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
           className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
           About Us
         </Link>
-        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        <Link href="#pricing" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
           className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
           Prices / Subscription
         </Link>
-        <Link href="#" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
+        <Link href="#faqs" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}
           className='text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10'>
           FAQ
         </Link>
@@ -51,16 +51,16 @@ export default function Header() {
         </div>
 
         <div className="hidden md:flex">
-          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+          <Link href="#advantages" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
             Our advantages
           </Link>
-          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+          <Link href="#about-us" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
             About Us
           </Link>
-          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+          <Link href="#pricing" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
             Prices / Subscription
           </Link>
-          <Link href="#" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
+          <Link href="#faqs" className='text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16'>
             FAQ
           </Link>
         </div>

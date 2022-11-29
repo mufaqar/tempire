@@ -40,7 +40,7 @@ const Item = ({ title, children }) => {
 
 export default function FAQs() {
   return (
-    <section className="bg-[#f8f8f8] py-[86px] px-4 bg-[url('/images/faq__bg.png')] bg-center bg-no-repeat bg-contain">
+    <section id="faqs" className="bg-[#f8f8f8] py-[86px] px-4 bg-[url('/images/faq__bg.png')] bg-center bg-no-repeat bg-contain">
       <div className="container mx-auto">
         <div className="md:text-center md:w-2/3 w-full mx-auto md:mb-[80px] mb-[30px]">
           <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333] text-center mb-5">

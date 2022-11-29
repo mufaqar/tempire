@@ -28,7 +28,7 @@ export const StatsData = [
 
 export default function Stats() {
   return (
-    <section className='bg-[rgba(253,205,96,0.3)] md:pt-[76px] md:pb-[63px] py-[43px] px-4'>
+    <section id="advantages" className='bg-[rgba(253,205,96,0.3)] md:pt-[76px] md:pb-[63px] py-[43px] px-4'>
       <div className='container mx-auto grid md:grid-cols-4 grid-cols-1 gap-10'>
         {StatsData.map((data, i) => {
           return <div key={i}>

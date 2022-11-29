@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto md:pt-[29px] md:pb-[43px] pt-[30px] pb-[37px] border-t border-[rgba(115,115,115,0.6)]">
-        <div className="flex justify-between">
+        <div className="flex md:justify-between justify-center">
           <p className="text-[12px] md:text-start text-center text-[#8D8D8D] tracking-[0.2px] mb-[14px]">
             Tempire © Copyright 2022
           </p>
