@@ -7,7 +7,7 @@ import Logo from '../public/images/logo.svg';
 function MobileNav({ open, setOpen }) {
   return (
     <div
-      className={`absolute top-16 left-0 h-screen w-screen bg-[#F8F8F8] z-50 transform ${
+      className={`absolute top-[4.9rem] left-0 h-screen w-screen bg-[#F8F8F8] z-50 transform ${
         open ? '-translate-x-0' : '-translate-x-full'
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
@@ -64,7 +64,8 @@ function MobileNav({ open, setOpen }) {
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="flex container mx-auto bg-white px-4 md:pt-[34px] md:pb-[31px] pt-[23px] pb-[21px] items-center">
+    <header className='fixed top-0 left-0 right-0 z-50 bg-white'>
+      <nav className="flex container mx-auto  px-4 md:pt-[34px] md:pb-[31px] pt-[23px] pb-[21px] items-center">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="md:w-3/12 w-1/2 flex items-center">
         <Link href="/">
@@ -128,5 +129,6 @@ export default function Header() {
         </div>
       </div>
     </nav>
+    </header>
   );
 }
