@@ -16,25 +16,25 @@ export default function Slider() {
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/bride.jpg')]"
-          title="Lorem ipsum dolor sit amet, consectetur."
+          title="Tempire"
           btnTxt="Apply Now"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur vitae quam et scelerisque. Pellentesque quis varius turpis. Sed dignissim euismod gravida. Cras eget rutrum nulla, ut dictum velit."
+          content="We are Tempire"
         />
       </SwiperSlide>
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/main.png')]"
-          title="Lorem ipsum dolor sit amet, consectetur."
-          btnTxt="Get a consultation"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur vitae quam et scelerisque. Pellentesque quis varius turpis. Sed dignissim euismod gravida. Cras eget rutrum nulla, ut dictum velit."
+          title="Tempire"
+          btnTxt="Apply Now"
+          content="We are Tempire"
         />
       </SwiperSlide>
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/main.png')]"
-          title="Lorem ipsum dolor sit amet, consectetur."
-          btnTxt="Get a consultation"
-          content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur vitae quam et scelerisque. Pellentesque quis varius turpis. Sed dignissim euismod gravida. Cras eget rutrum nulla, ut dictum velit."
+          title="Tempire"
+          btnTxt="Apply Now"
+          content="We are Tempire"
         />
       </SwiperSlide>
     </Swiper>
