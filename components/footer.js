@@ -108,17 +108,17 @@ export default function Footer() {
       <div className="container mx-auto md:pt-[29px] md:pb-[43px] pt-[30px] pb-[37px] border-t border-[rgba(115,115,115,0.6)]">
         <div className="flex md:justify-between justify-center">
           <p className="text-[12px] md:text-start text-center text-[#8D8D8D] tracking-[0.2px] mb-[14px]">
-            Tempire © Copyright 2022
+            TEMPIRE® © Copyright 2022
           </p>
           <ul className="md:flex hidden space-x-6 text-[12px] md:text-start text-center text-[#8D8D8D] hover:text-[#FDCD60] tracking-[0.2px] mb-[14px]">
             <li>
-              <Link href="#">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="#">Apply</Link>
+              <Link href="/apply">Apply</Link>
             </li>
             <li>
-              <Link href="#">Contact us</Link>
+              <Link href="/contact">Contact us</Link>
             </li>
           </ul>
         </div>
