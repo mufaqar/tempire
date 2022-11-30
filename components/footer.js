@@ -14,22 +14,7 @@ export default function Footer() {
           </p>
           <ul className="flex justify-center space-x-5 md:mb-[44px] mb-[35px]">
             <li>
-              <Link href="#">
-                <svg
-                  className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                </svg>
-              </Link>
-            </li>
-            <li>
-              <Link href="#">
+              <a href="#" target="_blank">
                 <svg
                   className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]"
                   viewBox="0 0 24 24"
@@ -44,7 +29,7 @@ export default function Footer() {
                   <circle cx="12" cy="12" r="3" />{' '}
                   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg>
-              </Link>
+              </a>
             </li>
             <li>
               <a href="mailto:support@tempire.space">
