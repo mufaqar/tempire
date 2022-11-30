@@ -15,7 +15,7 @@ export default function Slider() {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       <SwiperSlide>
         <Slide
-          imgsrc="bg-[url('/images/main.png')]"
+          imgsrc="bg-[url('/images/bridge.jpg')]"
           title="Lorem ipsum dolor sit amet, consectetur."
           btnTxt="Apply Now"
           content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur vitae quam et scelerisque. Pellentesque quis varius turpis. Sed dignissim euismod gravida. Cras eget rutrum nulla, ut dictum velit."
