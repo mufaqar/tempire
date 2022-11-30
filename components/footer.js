@@ -17,6 +17,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/tempire.space/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <svg
                   className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]"
@@ -94,12 +95,13 @@ export default function Footer() {
             </svg>
             <ul>
               <li>
-                <Link
+                <a
                   href="#"
+                  rel="noreferrer"
                   className="text-base text-center text-white tracking-[0.2px]"
                 >
                   St Paul Minnesota, USA
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
