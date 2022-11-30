@@ -18,7 +18,7 @@ function Plan({ name, price, period, tip, href, features, btnTxt, featured = fal
           </p>
         </div>
         <ul
-          className={`order-last space-y-3 text-sm', ${featured ? 'text-[#333333]' : 'text-[#333333]'}`}
+          className={`order-last space-y-3 text-sm ${featured ? 'text-[#333333]' : 'text-[#333333]'}`}
         >
           {features.map((feature) => (
             <li key={feature} className="flex">
@@ -66,7 +66,7 @@ export default function Pricing() {
           <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333]">
           Try our best offer
           </h2>
-          <p className="text-sm font-medium leading-[2] tracking-wide text-[#333333] mt-3">
+          <p className="text-base font-medium leading-[2] tracking-wide text-[#333333] mt-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>

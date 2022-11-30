@@ -4,7 +4,7 @@ const Item = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b">
+    <div className="border-b border-[#D6DAE4]">
       <button
         type="button"
         aria-label="Open item"
@@ -31,7 +31,7 @@ const Item = ({ title, children }) => {
       </button>
       {isOpen && (
         <div className="pb-4 pt-0">
-          <p className="text-sm tracking-wide text-[#333333]">{children}</p>
+          <p className="text-base font-[400] tracking-wide text-[#333333]">{children}</p>
         </div>
       )}
     </div>
