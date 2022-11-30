@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.svg';
 
+
 function MobileNav({ open, setOpen }) {
   return (
     <div
