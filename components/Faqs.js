@@ -5,43 +5,8 @@ export default function FAQs() {
   return (
     <section id="contact-us" className="text-gray-600 body-font relative">
       <div className="container px-4 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="md:w-1/2 w-full bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            className="absolute inset-0 w-full h-full"
-            frameBorder="0"
-            title="map"
-            scrolling="no"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90374.23400569119!2d-93.1060534!3d44.9397075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2d4cee4e9379f%3A0xc87291d23fda2e29!2sSt%20Paul%2C%20MN%2C%20USA!5e0!3m2!1sen!2s!4v1669816198747!5m2!1sen!2s"
-          ></iframe>
-          <div className="bg-white md:w-[90%] w-full relative md:flex items-center py-6 rounded shadow-md">
-            <div className="md:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <Link
-                href="mailto:info@tempire.com"
-                target="_blank"
-                className="text-[#FDCD60] leading-relaxed"
-              >
-                info@tempire.com
-              </Link>
-            </div>
-            <div className="md:w-1/2 px-6 mt-4 md:mt-0">
-              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <Link
-                href="tel:123457890"
-                target="_blank"
-                className="leading-relaxed text-[#FDCD60] "
-              >
-                123-456-7890
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+        <div className="md:w-1/2 mx-auto bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333] mb-[29px]">
             Apply Here
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
