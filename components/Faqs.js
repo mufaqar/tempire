@@ -91,8 +91,7 @@ export default function FAQs() {
               Submit
             </button>
             <p className="text-xs text-gray-500 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
+              Your information will be safe
             </p>
           </form>
         </div>
