@@ -29,10 +29,7 @@ export default function Footer() {
             <svg className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /></svg>
             <ul>
               <li><Link href="#" className="text-base text-center text-white tracking-[0.2px]">
-                +38 (000) 000-00-00
-              </Link></li>
-              <li><Link href="#" className="text-base text-center text-white tracking-[0.2px]">
-                +38 (000) 000-00-00
+                123-456-7890
               </Link></li>
             </ul>
           </div>
@@ -54,16 +51,16 @@ export default function Footer() {
           <ul className="md:flex hidden space-x-6 text-[12px] md:text-start text-center text-[#8D8D8D] hover:text-[#FDCD60] tracking-[0.2px] mb-[14px]">
             <li>
               <Link href="#">
-              Privacy policy
-            </Link></li>
+                About
+              </Link></li>
             <li>
               <Link href="#">
-              Terms of service
-            </Link></li>
+                Apply
+              </Link></li>
             <li>
               <Link href="#">
-              Cookie Policy
-            </Link></li>
+                Contact us
+              </Link></li>
           </ul>
         </div>
       </div>

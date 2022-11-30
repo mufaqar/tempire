@@ -20,7 +20,7 @@ function MobileNav({ open, setOpen }) {
           }
           className="text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10"
         >
-          Our advantages
+          Home
         </Link>
         <Link
           href="#about-us"
@@ -42,10 +42,10 @@ function MobileNav({ open, setOpen }) {
           }
           className="text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10"
         >
-          Prices / Subscription
+         Apply
         </Link>
         <Link
-          href="#faqs"
+          href="#contact-us"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -53,7 +53,7 @@ function MobileNav({ open, setOpen }) {
           }
           className="text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10"
         >
-          FAQ
+          Contact us
         </Link>
       </div>
     </div>
@@ -120,7 +120,7 @@ export default function Header() {
             Apply
           </Link>
           <Link
-            href="#faqs"
+            href="#contact-us"
             className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
           >
             Contact Us
