@@ -10,7 +10,7 @@ export default function About() {
         className=" md:pt-[76px] md:pb-[63px] py-[43px] px-4"
       >
         <div className="container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10 ]">
-          <div className="md:pr-10 mt-[25px">
+          <div className="md:pr-10 pt-[70px]">
             <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333] mb-[29px]">
               About TEMPIRE®
             </h2>
