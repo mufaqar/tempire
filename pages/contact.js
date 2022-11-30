@@ -13,7 +13,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <PageTitle title="Contact Us Tempire" />
+      <PageTitle title="Contact Us" />
 
       <FAQs />
 
