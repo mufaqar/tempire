@@ -15,8 +15,8 @@ export default function Slider() {
     <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
       <SwiperSlide>
         <Slide
-          imgsrc="bg-[url('/images/bride.jpg')]"
-          title="Welcome to Tempire"
+          imgsrc="bg-[url('/images/bridge.jpg')]"
+          title="TEMPIRE®"
           btnTxt="Quick Apply Now"
           content="May the bridges we build, lead the way."
         />
@@ -24,15 +24,15 @@ export default function Slider() {
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/main.png')]"
-          title="Welcome to Tempire"
+          title="TEMPIRE®"
           btnTxt="Contact Us"
-          content="May the bridges we build, lead the way.."
+          content="May the bridges we build, lead the way."
         />
       </SwiperSlide>
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/bride.jpg')]"
-          title="Welcome to Tempire"
+          title="TEMPIRE®"
           btnTxt="Apply Now"
           content="May the bridges we build, lead the way."
         />
