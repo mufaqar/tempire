@@ -2,12 +2,9 @@ import Image from 'next/image';
 import React from 'react';
 import AboutImg from '../public/images/main.png';
 
-import PageTitle from '../components/pagebanner';
-
 export default function About() {
   return (
     <>
-      <PageTitle />
       <section
         id="about-us"
         className=" md:pt-[76px] md:pb-[63px] py-[43px] px-4"
