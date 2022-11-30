@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.svg';
 
-
 function MobileNav({ open, setOpen }) {
   return (
     <div
@@ -13,7 +12,7 @@ function MobileNav({ open, setOpen }) {
     >
       <div className="flex flex-col ml-4">
         <Link
-          href="#advantages"
+          href="/"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -103,7 +102,7 @@ export default function Header() {
 
           <div className="hidden md:flex">
             <Link
-              href="#advantages"
+              href="/"
               className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
             >
               Home
