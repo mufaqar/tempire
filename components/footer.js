@@ -97,7 +97,7 @@ export default function Footer() {
                   href="#"
                   className="text-base text-center text-white tracking-[0.2px]"
                 >
-                  Your address should be here
+                  St Paul Minnesota, USA
                 </Link>
               </li>
             </ul>

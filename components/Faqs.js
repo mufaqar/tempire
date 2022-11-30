@@ -11,7 +11,7 @@ export default function FAQs() {
             frameBorder="0"
             title="map"
             scrolling="no"
-            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90374.23400569119!2d-93.1060534!3d44.9397075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2d4cee4e9379f%3A0xc87291d23fda2e29!2sSt%20Paul%2C%20MN%2C%20USA!5e0!3m2!1sen!2s!4v1669816198747!5m2!1sen!2s"
           ></iframe>
           <div className="bg-white md:w-[90%] w-full relative md:flex items-center py-6 rounded shadow-md">
             <div className="md:w-1/2 px-6">
