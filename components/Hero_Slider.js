@@ -16,25 +16,26 @@ export default function Slider() {
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/bride.jpg')]"
-          title="Tempire"
+          title="Welcome to Tempire"
           btnTxt="Apply Now"
-          content="We are Tempire"
+          content="Big Enough to Succeed, Small Enough to Care           "
         />
       </SwiperSlide>
       <SwiperSlide>
         <Slide
           imgsrc="bg-[url('/images/main.png')]"
-          title="Tempire"
-          btnTxt="Apply Now"
-          content="We are Tempire"
+          title="Welcome to Tempire"
+          btnTxt="Contact Us"
+          content="Whatever your needs may be, May Trucking Company is the place for you."
         />
       </SwiperSlide>
       <SwiperSlide>
         <Slide
-          imgsrc="bg-[url('/images/main.png')]"
-          title="Tempire"
+          imgsrc="bg-[url('/images/bride.jpg')]"
+          title="Welcome to Tempire"
           btnTxt="Apply Now"
-          content="We are Tempire"
+          content="Big Enough to Succeed, Small Enough to Care 
+          "
         />
       </SwiperSlide>
     </Swiper>
