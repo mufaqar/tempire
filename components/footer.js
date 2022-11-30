@@ -24,7 +24,6 @@ export default function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {' '}
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                 </svg>
               </Link>
@@ -40,13 +39,29 @@ export default function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  {' '}
                   <path stroke="none" d="M0 0h24v24H0z" />{' '}
                   <rect x="4" y="4" width="16" height="16" rx="4" />{' '}
                   <circle cx="12" cy="12" r="3" />{' '}
                   <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
                 </svg>
               </Link>
+            </li>
+            <li>
+              <a href="mailto:support@tempire.space">
+                <svg
+                  className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76"
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -61,7 +76,6 @@ export default function Footer() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              {' '}
               <path stroke="none" d="M0 0h24v24H0z" />{' '}
               <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
             </svg>
@@ -86,7 +100,6 @@ export default function Footer() {
               strokeLinecap="round"
               strokeLinejoin="round"
             >
-              {' '}
               <path stroke="none" d="M0 0h24v24H0z" />{' '}
               <circle cx="12" cy="11" r="3" />{' '}
               <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
