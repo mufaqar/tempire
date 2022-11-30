@@ -45,7 +45,8 @@ export default function FAQs() {
             Apply Here
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            Feel free to contact with Tempire
+            Complete the form below and click SUBMIT or call us at (+00)
+            123-456-78
           </p>
           <form>
             <div className="relative mb-4">
