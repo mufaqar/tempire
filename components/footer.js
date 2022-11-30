@@ -14,7 +14,10 @@ export default function Footer() {
           </p>
           <ul className="flex justify-center space-x-5 md:mb-[44px] mb-[35px]">
             <li>
-              <a href="#" target="_blank">
+              <a
+                href="https://www.instagram.com/tempire.space/"
+                target="_blank"
+              >
                 <svg
                   className="h-6 w-6 p-1 bg-[rgba(246,246,246,0.1)] rounded-full text-[#FDCD60]"
                   viewBox="0 0 24 24"

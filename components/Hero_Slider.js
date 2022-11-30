@@ -44,9 +44,9 @@ export default function Slider() {
 function Slide({ imgsrc, title, content, btnTxt }) {
   return (
     <div
-      className={`${imgsrc} bg-center bg-no-repeat bg-cover h-screen flex items-center w-full `}
+      className={`${imgsrc} bg-center bg-no-repeat bg-cover h-[90vh] pt-10  flex items-center w-full `}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:px-14">
         <div className="md:w-1/2 w-full flex flex-col md:justify-start justify-center">
           <h2 className="md:text-[33.024px] md:leading-[1.3] text-2xl tracking-wide font-bold text-white mb-3 md:text-start text-center">
             {title}
