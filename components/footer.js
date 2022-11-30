@@ -70,7 +70,7 @@ export default function Footer() {
                   href="#"
                   className="text-base text-center text-white tracking-[0.2px]"
                 >
-                  123-456-7890
+                  612-567-1794
                 </Link>
               </li>
             </ul>
