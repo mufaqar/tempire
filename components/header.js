@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Logo from '../public/images/logo.svg';
 
-
 function MobileNav({ open, setOpen }) {
   return (
     <div
@@ -105,7 +104,7 @@ export default function Header() {
             href="#advantages"
             className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
           >
-            Our advantages
+            Home
           </Link>
           <Link
             href="#about-us"
@@ -117,13 +116,13 @@ export default function Header() {
             href="#pricing"
             className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
           >
-            Prices / Subscription
+            Apply
           </Link>
           <Link
             href="#faqs"
             className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
           >
-            FAQ
+            Contact Us
           </Link>
         </div>
       </div>
