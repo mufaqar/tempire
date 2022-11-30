@@ -17,7 +17,7 @@ export default function Slider() {
         <Slide
           imgsrc="bg-[url('/images/bride.jpg')]"
           title="Welcome to Tempire"
-          btnTxt="Apply Now"
+          btnTxt="Quick Apply Now"
           content="Big Enough to Succeed, Small Enough to Care           "
         />
       </SwiperSlide>
