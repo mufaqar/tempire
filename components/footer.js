@@ -66,12 +66,12 @@ export default function Footer() {
             </svg>
             <ul>
               <li>
-                <Link
-                  href="#"
+                <a
+                  href="tel:612-567-1794"
                   className="text-base text-center text-white tracking-[0.2px]"
                 >
                   612-567-1794
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
