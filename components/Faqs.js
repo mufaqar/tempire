@@ -10,8 +10,7 @@ export default function FAQs() {
             Apply Here
           </h2>
           <p className="leading-relaxed mb-5 text-gray-600">
-            Complete the form below and click SUBMIT or call us at (+00)
-            123-456-78
+            Complete the form below and click SUBMIT or call us at 612-567-1794
           </p>
           <form>
             <div className="relative mb-4">
