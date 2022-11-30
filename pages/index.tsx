@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <Header />
       <Slider />
-      <Stats />
+
       <About />
       <FAQs />
       <Footer />
