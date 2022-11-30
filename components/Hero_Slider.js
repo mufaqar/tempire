@@ -18,7 +18,7 @@ export default function Slider() {
           imgsrc="bg-[url('/images/bride.jpg')]"
           title="Welcome to Tempire"
           btnTxt="Quick Apply Now"
-          content="Big Enough to Succeed, Small Enough to Care           "
+          content="May the bridges we build, lead the way."
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -26,7 +26,7 @@ export default function Slider() {
           imgsrc="bg-[url('/images/main.png')]"
           title="Welcome to Tempire"
           btnTxt="Contact Us"
-          content="Whatever your needs may be, May Trucking Company is the place for you."
+          content="May the bridges we build, lead the way.."
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -34,8 +34,7 @@ export default function Slider() {
           imgsrc="bg-[url('/images/bride.jpg')]"
           title="Welcome to Tempire"
           btnTxt="Apply Now"
-          content="Big Enough to Succeed, Small Enough to Care 
-          "
+          content="May the bridges we build, lead the way."
         />
       </SwiperSlide>
     </Swiper>
