@@ -10,7 +10,7 @@ export default function Footer() {
           <Image src={Logo} alt="Logo" className="mx-auto mb-[7px]" />
           <p className="text-sm text-center text-white tracking-[0.2px] mb-[14px]">
             Whatever your needs may be, May Trucking Company is the place for
-            you.{' '}
+            you.
           </p>
           <ul className="flex justify-center space-x-5 md:mb-[44px] mb-[35px]">
             <li>
