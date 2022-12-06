@@ -61,7 +61,7 @@ export default function ComingSoon() {
               </svg>
               <div className="absolute -top-12 transform -rotate-45 text-blue-500">
                 <p className="font-light text-base text-white bg-blue-500 rounded-md px-2 py-0">
-                  super
+                  Tempire
                 </p>
               </div>
             </div>
