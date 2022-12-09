@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#3B3B3B] ">
       <div className="container mx-auto pt-[51px] pb-[28px]">
-        <div className="md:w-1/3 w-full mx-auto">
+        <div className="w-full mx-auto">
           <Image src={Logo} alt="Logo" className="mx-auto mb-[7px]" />
           <p className="text-sm text-center text-white tracking-[0.2px] mb-[14px]">
             At TEMPIRE® there are no limits to the lengths we will go to deliver
