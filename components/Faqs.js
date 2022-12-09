@@ -80,7 +80,7 @@ export default function FAQs() {
               className="text-white hover:text-[#FDCD60] bg-[#FDCD60] border-2 border-[#FDCD60] py-2 px-6 focus:outline-none hover:bg-transparent rounded text-lg"
             />
             <p className="text-xs text-gray-500 mt-3">
-              Your information will be safe
+              All inquiries will be addressed within 24 hours.
             </p>
           </form>
         </div>
