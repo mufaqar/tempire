@@ -55,7 +55,7 @@ function Slide({ imgsrc, title, content, btnTxt }) {
             {content}
           </p>
           <Link
-            href="#"
+            href="#contact-us"
             className="text-base font-semibold bg-transparent text-[#FDCD60] border border-[#FDCD60] hover:bg-[#FDCD60] hover:text-white rounded-[3px] py-[13.5px] px-[45px] flex mx-auto md:ml-0"
           >
             {btnTxt}

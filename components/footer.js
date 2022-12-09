@@ -4,7 +4,7 @@ import Logo from '../public/images/logo-footer.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3B3B3B] ">
+    <footer className="bg-[#3B3B3B] " >
       <div className="container mx-auto pt-[51px] pb-[28px]">
         <div className="md:w-1/3 w-full mx-auto">
           <Image src={Logo} alt="Logo" className="mx-auto mb-[7px]" />
