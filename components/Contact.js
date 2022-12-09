@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-export default function FAQs() {
+export default function Contact() {
   const {
     register,
     handleSubmit,
@@ -80,7 +80,8 @@ export default function FAQs() {
               className="text-white hover:text-[#FDCD60] bg-[#FDCD60] border-2 border-[#FDCD60] py-2 px-6 focus:outline-none hover:bg-transparent rounded text-lg"
             />
             <p className="text-xs text-gray-500 mt-3">
-              All inquiries will be addressed within 24 hours.
+              All inquiries will be addressed within 24 hours by a Tempire®
+              representative.
             </p>
           </form>
         </div>

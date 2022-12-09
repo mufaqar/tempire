@@ -1,6 +1,6 @@
 import Header from '../components/header';
 
-import FAQs from '../components/Faqs';
+import Contact from '../components/Contact';
 import Footer from '../components/footer';
 import PageTitle from '../components/pagebanner';
 import Head from 'next/head';
@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
       <PageTitle title="Contact Us" />
 
-      <FAQs />
+      <Contact />
 
       <Footer />
     </>

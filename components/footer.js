@@ -4,13 +4,14 @@ import Logo from '../public/images/logo-footer.svg';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3B3B3B] " >
+    <footer className="bg-[#3B3B3B] ">
       <div className="container mx-auto pt-[51px] pb-[28px]">
         <div className="md:w-1/3 w-full mx-auto">
           <Image src={Logo} alt="Logo" className="mx-auto mb-[7px]" />
           <p className="text-sm text-center text-white tracking-[0.2px] mb-[14px]">
-            Whatever your needs may be, May Trucking Company is the place for
-            you.
+            At TEMPIRE® there are no limits to the lengths we will go to deliver
+            the strongest equipment to our cusotomer along with top shelf
+            customer service one phone call away
           </p>
           <ul className="flex justify-center space-x-5 md:mb-[44px] mb-[35px]">
             <li>

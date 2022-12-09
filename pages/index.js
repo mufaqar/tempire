@@ -1,6 +1,6 @@
 import Header from '../components/header';
 import About from '../components/About';
-import FAQs from '../components/Faqs';
+import Contact from '../components/Contact';
 import Footer from '../components/footer';
 import Slider from '../components/Hero_Slider';
 import Head from 'next/head';
@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Slider />
       <About />
-      <FAQs />
+      <Contact />
       <Footer />
     </>
   );
