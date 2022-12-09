@@ -30,12 +30,6 @@ export default function FAQs() {
     <section id="contact-us" className="text-gray-600 body-font relative">
       <div className="container px-4 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="md:w-1/2 mx-auto bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333] mb-[29px]">
-            Inquire
-          </h2>
-          <p className="leading-relaxed mb-5 text-gray-600">
-            Complete the form below and click SUBMIT or call us at 612-567-1794
-          </p>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-600">
