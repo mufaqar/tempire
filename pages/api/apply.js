@@ -1,31 +1,29 @@
-export default function (req, res) {
-  let nodemailer = require('nodemailer');
-
-  // step-1
+import nodemailer from 'nodemailer';
+export default async (req, res) => {
+  const { name, email, message } = req.body;
   const transporter = nodemailer.createTransport({
-    port: 465,
     host: 'smtp.gmail.com',
-    auth: {
-      user: 'gillanix007@gmail.com',
-      pass: 'ewktztcrvvcudufm',
-    },
+    port: 465,
     secure: true,
+    auth: {
+      user: 'mufaqar@gmail.com',
+      pass: 'sfrhpeyvmjcphjeq',
+    },
   });
 
-  // step-2
-  const mailData = {
-    from: 'gillanix007@gmail.com',
-    to: 'mufaqar@gmail.com',
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message + ' | Sent from: ' + req.body.email,
-    html: `<div>${req.body.message}</div><p>Sent from:
-        ${req.body.email}</p>`,
-  };
-
-  // step-3
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
-  res.status(200);
-}
+  try {
+    await transporter.sendMail({
+      from: 'support@tempire.space',
+      to: 'support@tempire.space,mufaqar@gmail.com',
+      subject: `Inquire   from ${name}`,
+      html: `<p>You have a contact form submission</p><br>
+      <p><strong>Name: </strong> ${name}</p><br>   
+      <p><strong>Email: </strong> ${email}</p><br>
+          <p><strong>Message: </strong> ${message}</p><br>
+        `,
+    });
+  } catch (error) {
+    return res.status(500).json({ error: error.message || error.toString() });
+  }
+  return res.status(200).json({ error: '' });
+};

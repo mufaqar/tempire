@@ -20,6 +20,8 @@ export default function FAQs() {
       if (res.status === 200) {
         console.log('Response succeeded!');
         alert('Message Successfully send.!');
+      } else {
+        alert('Error!');
       }
     });
   };
