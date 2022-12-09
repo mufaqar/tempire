@@ -41,6 +41,7 @@ export default function FAQs() {
                 name="name"
                 {...register('name')}
                 className="w-full bg-white rounded border border-gray-300 focus:border-[#FDCD60] focus:ring-2 focus:ring-[#FDCD60] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                placeholder="enter your name "
               />
             </div>
             <div className="relative mb-4">
@@ -56,6 +57,7 @@ export default function FAQs() {
                 name="email"
                 {...register('email')}
                 className="w-full bg-white rounded border border-gray-300 focus:border-[#FDCD60] focus:ring-2 focus:ring-[#FDCD60] text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                placeholder="enter your email address "
               />
             </div>
             <div className="relative mb-4">
@@ -70,6 +72,7 @@ export default function FAQs() {
                 name="message"
                 {...register('message')}
                 className="w-full bg-white rounded border border-gray-300 focus:border-[#FDCD60] focus:ring-2 focus:ring-[#FDCD60] h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                placeholder="enter your message"
               ></textarea>
             </div>
             <input
