@@ -17,7 +17,7 @@ export default function Slider() {
         <Slide
           imgsrc="bg-[url('/images/bridge.jpg')]"
           title="TEMPIRE®"
-          btnTxt="Quick Apply Now"
+          btnTxt="Inquire"
           content="May the bridges we build, lead the way."
         />
       </SwiperSlide>
