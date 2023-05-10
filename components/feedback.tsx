@@ -103,7 +103,7 @@ function Feedback() {
                         </p>
                         <div className="mt-6 flex gap-6">
                             <div className="max-w-[160px]">
-                                <h4 className="font-semibold text-2xl">90%</h4>
+                                <h4 className="font-semibold text-2xl">95%</h4>
                                 <p className="text-main font-light mt-2">
                                 Businesses complete successfully
                                 </p>
