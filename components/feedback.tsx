@@ -33,7 +33,7 @@ function Feedback() {
         ref.current.slickPrev();
       };
     return (
-        <section id="reviews" className="py-[86px] px-4 bg-[#f7fbff]">
+        <section id="reviews" className="py-[86px] px-4 bg-[#fff5dd]">
             <div className="container mx-auto">
                 <div className="md:flex gap-10 lg:gap-20 ">
                     <div className="bg-white relative rounded-md p-10 md:w-[60%]">
