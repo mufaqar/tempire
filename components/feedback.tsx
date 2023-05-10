@@ -99,19 +99,19 @@ function Feedback() {
                             Improve knowledge level comprehensively and effectively.
                         </p>
                         <p className="uppercase text-main font-bold mt-5">
-                            People Love To Learn With Us
+                            People Love Us for growing business.
                         </p>
                         <div className="mt-6 flex gap-6">
                             <div className="max-w-[160px]">
                                 <h4 className="font-semibold text-2xl">90%</h4>
                                 <p className="text-main font-light mt-2">
-                                    Students complete course successfully{' '}
+                                Businesses complete successfully
                                 </p>
                             </div>
                             <div className="max-w-[160px]">
                                 <h4 className="font-semibold text-2xl">9/10</h4>
                                 <p className="text-main font-light mt-2">
-                                    Users reported better learning outcomes{' '}
+                                    Users reported better learning outcomes
                                 </p>
                             </div>
                         </div>
@@ -126,36 +126,36 @@ export default Feedback
 
 export const Feedbackdata = [
     {
-        name: "Maria Wang",
-        review: "“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”",
+        name: "Emma Watson",
+        review: "“I recently contacted Shelf Customer Services with a query, and I was amazed by the level of professionalism and efficiency displayed by their team. They promptly addressed my concerns and provided a satisfactory solution. Their exceptional customer service has made me a loyal customer ”",
         position: "Customer",
         image: User,
         rating: 5,
     },
     {
-        name: "Maria Wang",
-        review: "“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”",
+        name: "Jack Nicholson",
+        review: "“I had an issue with a product I purchased from Shelf, and I reached out to their customer service for assistance. Not only did they listen attentively to my problem, but they also went above and beyond to resolve it. The representative I spoke with was friendly, patient, and knowledgeable. I highly recommend Shelf Customer Services for their outstanding support.”",
         position: "Customer",
         image: User,
         rating: 3,
     },
     {
-        name: "Maria Wang",
-        review: "“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”",
+        name: "Ena Leo",
+        review: "“I've interacted with several customer service teams in the past, but Shelf Customer Services stands out from the rest. They truly understand the value of customer satisfaction. Whenever I've reached out to them, they have been quick to respond, proactive in finding solutions, and genuinely caring. Their dedication to their customers is commendable.”",
         position: "Customer",
         image: User,
         rating: 4,
     },
     {
-        name: "Maria Wang",
-        review: "“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”",
+        name: "Mat Parker",
+        review: "“Shelf Customer Services has set a benchmark for excellent customer support. Their representatives are courteous, empathetic, and always willing to help. I recently had an issue with a delivery, and they handled it swiftly, ensuring I received a replacement in no time. It's refreshing to encounter a company that puts its customers first.”",
         position: "Customer",
         image: User,
         rating: 5,
     },
     {
-        name: "Maria Wang",
-        review: "“I love this way of studying Maths! ExamHero have plenty of resources, You can read the notes and test your mastery of it by doing questions. And the knowledge point recommendation tell me the next step I should take, just a awesome experience!”",
+        name: "Elon Ziang",
+        review: "“I want to express my gratitude to Shelf Customer Services for their exceptional assistance. I had some concerns about a recent purchase, and they immediately addressed my worries with professionalism and grace. Their commitment to ensuring a positive customer experience is evident in every interaction. I feel valued as a customer, and I highly recommend their services.”",
         position: "Customer",
         image: User,
         rating: 5,
