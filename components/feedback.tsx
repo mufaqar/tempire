@@ -4,8 +4,6 @@ import User from '../public/images/bride.jpg';
 import { FaStar } from 'react-icons/fa';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Image from 'next/image';
-
-
 interface IFeedback {
     review: string;
     user: {
