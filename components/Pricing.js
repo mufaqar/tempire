@@ -64,10 +64,10 @@ export default function Pricing() {
       <div className="container mx-auto">
         <div className="md:text-center">
           <h2 className="md:text-[37.5px] md:leading-[1.25] font-bold text-2xl trackind-wide text-[#333333]">
-          Try our best offer
+            Try our best offer
           </h2>
           <p className="text-base font-medium leading-[2] tracking-wide text-[#333333] mt-3">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
