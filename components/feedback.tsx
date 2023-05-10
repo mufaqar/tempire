@@ -9,13 +9,13 @@ import Image from 'next/image';
 interface IFeedback {
     review: string;
     user: {
-      name: string;
-      designation: string;
-      image: any;
+        name: string;
+        designation: string;
+        image: any;
     };
     rating: number;
-  }
-  
+}
+
 function Feedback() {
     const settings = {
         dots: false,
@@ -23,15 +23,15 @@ function Feedback() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-      };
-      const ref = useRef<any>(null);
-      const handleNextSlide = () => {
+    };
+    const ref = useRef<any>(null);
+    const handleNextSlide = () => {
         ref.current.slickNext();
-      };
-    
-      const handlePrevSlide = () => {
+    };
+
+    const handlePrevSlide = () => {
         ref.current.slickPrev();
-      };
+    };
     return (
         <section id="reviews" className="py-[86px] px-4 bg-[#fff5dd]">
             <div className="container mx-auto">
@@ -62,7 +62,7 @@ function Feedback() {
                                             />
                                             <div>
                                                 <h4 className="font-bold text-base">
-                                                   {item.name}
+                                                    {item.name}
                                                 </h4>
                                                 <p className="text-main">
                                                     {item.position}
@@ -105,7 +105,7 @@ function Feedback() {
                             <div className="max-w-[160px]">
                                 <h4 className="font-semibold text-2xl">95%</h4>
                                 <p className="text-main font-light mt-2">
-                                Businesses complete successfully
+                                    Businesses complete successfully
                                 </p>
                             </div>
                             <div className="max-w-[160px]">
@@ -137,7 +137,7 @@ export const Feedbackdata = [
         review: "“I had an issue with a product I purchased from Shelf, and I reached out to their customer service for assistance. Not only did they listen attentively to my problem, but they also went above and beyond to resolve it. The representative I spoke with was friendly, patient, and knowledgeable. I highly recommend Shelf Customer Services for their outstanding support.”",
         position: "Customer",
         image: User,
-        rating: 3,
+        rating: 4,
     },
     {
         name: "Ena Leo",
