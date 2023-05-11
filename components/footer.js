@@ -118,6 +118,9 @@ export default function Footer() {
               <Link href="/about">About</Link>
             </li>
             <li>
+              <Link href="/rate-us">Leave your Review</Link>
+            </li>
+            <li>
               <Link href="/apply">Apply</Link>
             </li>
             <li>
