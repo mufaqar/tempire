@@ -4,7 +4,7 @@ import User from '../public/images/bride.jpg';
 import { FaStar } from 'react-icons/fa';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Image from 'next/image';
-import {client} from '../config/client'
+import { client } from '../config/client'
 
 
 
@@ -28,11 +28,11 @@ function Feedback() {
     };
 
     useEffect(() => {
-       const fetchReview = async () => {
-        const review = await client.fetch('*[_type == "rateing"]{name,email,position,icon{asset->{url}},star,review}')
-        setReviews(review)
-       }
-       fetchReview()
+        const fetchReview = async () => {
+            const review = await client.fetch('*[_type == "rateing"]{name,email,position,icon{asset->{url}},star,review}')
+            setReviews(review)
+        }
+        fetchReview()
     });
 
     return (
@@ -54,7 +54,7 @@ function Feedback() {
                                             ))}
                                         </div>
                                         <p className="mt-5 mb-5 text-gray-400">
-                                        “{item.review}”
+                                            “{item.review}”
                                         </p>
                                         <div className="flex items-center gap-4 mt-8">
                                             <Image
