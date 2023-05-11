@@ -1,20 +1,16 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import User from '../public/images/bride.jpg';
 import { FaStar } from 'react-icons/fa';
 import { FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import Image from 'next/image';
-interface IFeedback {
-    review: string;
-    user: {
-        name: string;
-        designation: string;
-        image: any;
-    };
-    rating: number;
-}
+import {client} from '../config/client'
+
+
 
 function Feedback() {
+    const [reviews, setReviews] = useState<any[]>([])
+
     const settings = {
         dots: false,
         infinite: true,
@@ -30,15 +26,24 @@ function Feedback() {
     const handlePrevSlide = () => {
         ref.current.slickPrev();
     };
+
+    useEffect(() => {
+       const fetchReview = async () => {
+        const review = await client.fetch('*[_type == "rateing"]{name,email,position,icon{asset->{url}},star,review}')
+        setReviews(review)
+       }
+       fetchReview()
+    });
+
     return (
         <section id="reviews" className="py-[86px] px-4 bg-[#fff5dd]">
             <div className="container mx-auto">
                 <div className="md:flex gap-10 lg:gap-20 ">
                     <div className="bg-white relative rounded-md p-10 md:w-[60%]">
                         <Slider {...settings} ref={ref}>
-                            {Feedbackdata.map((item: any, idx: number) => {
+                            {reviews?.map((item: any, idx: number) => {
                                 var star: number[] = [];
-                                for (let i = 0; i < item.rating; i++) {
+                                for (let i = 0; i < item?.star; i++) {
                                     star.push(i);
                                 }
                                 return (
@@ -49,20 +54,21 @@ function Feedback() {
                                             ))}
                                         </div>
                                         <p className="mt-5 mb-5 text-gray-400">
-                                            {item.review}
+                                        “{item.review}”
                                         </p>
                                         <div className="flex items-center gap-4 mt-8">
                                             <Image
-                                                src={item.image}
+                                                src={item?.icon?.asset?.url}
                                                 alt="image"
                                                 width={60}
                                                 height={60}
+                                                className='rounded-full'
                                             />
                                             <div>
-                                                <h4 className="font-bold text-base">
+                                                <h4 className="font-bold text-base capitalize">
                                                     {item.name}
                                                 </h4>
-                                                <p className="text-main">
+                                                <p className="text-main capitalize">
                                                     {item.position}
                                                 </p>
                                             </div>

@@ -6,9 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sanity-dev": "sanity dev",
+    "sanity-start": "sanity start",
+    "sanity-build": "sanity build",
+    "sanity-deploy": "sanity deploy",
+    "sanity-deploy-graphql": "sanity graphql deploy"
   },
   "dependencies": {
+    "@sanity/client": "^6.0.1",
+    "@sanity/vision": "^3.0.0",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
@@ -20,13 +27,17 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.40.0",
     "react-icons": "^4.8.0",
+    "react-is": "^18.2.0",
     "react-slick": "^0.29.0",
     "react-slider-swiper": "^2.0.6",
+    "sanity": "^3.0.0",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.2.0",
     "swiper": "^8.4.5",
     "typescript": "4.9.3"
   },
   "devDependencies": {
+    "@sanity/eslint-config-studio": "^2.0.1",
     "@types/react-slick": "^0.23.10",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.19",
