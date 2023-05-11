@@ -97,7 +97,7 @@ function Feedback() {
                             Improve knowledge level comprehensively and effectively.
                         </p>
                         <p className="uppercase text-main font-bold mt-5">
-                            People Love Us for growing business.
+                            People Love us for growing business.
                         </p>
                         <div className="mt-6 flex gap-6">
                             <div className="max-w-[160px]">
