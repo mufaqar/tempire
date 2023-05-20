@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -13,9 +13,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
 }
-
-
-.swiper-button-next:after,.swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: white;
 }
-
