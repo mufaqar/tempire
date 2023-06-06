@@ -17,3 +17,21 @@ body {
 .swiper-button-prev:after {
   color: white;
 }
+
+
+.box {
+  --mask:
+  radial-gradient(61.77px at 50% calc(100% - 84.00px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+  radial-gradient(61.77px at 50% calc(100% + 54.00px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+-webkit-mask: var(--mask);
+        mask: var(--mask);  
+  }
+
+
+  .wave-top {
+    --mask:
+      radial-gradient(67.08px at 50% 90.00px,#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
+      radial-gradient(67.08px at 50% -60px,#0000 99%,#000 101%) 50% 30px/120px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
