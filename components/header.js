@@ -43,7 +43,7 @@ function MobileNav({ open, setOpen }) {
           }
           className="text-xl text-center font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors mt-10"
         >
-          Apply
+          Apply Now
         </Link>
         <Link
           href="/contact"
@@ -125,7 +125,7 @@ export default function Header() {
                 href="/apply"
                 className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
               >
-                Apply
+                Apply Now
               </Link>
               <Link
                 href="/contact"
