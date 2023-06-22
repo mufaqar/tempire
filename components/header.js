@@ -127,6 +127,13 @@ export default function Header() {
               >
                 Apply Now
               </Link>
+
+              <Link
+                href="/rate-us"
+                className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
+              >
+                Rate Us
+              </Link>
               <Link
                 href="/contact"
                 className="text-base font-semibold text-[#3B3B3B] hover:text-[#FDCD60] transition-colors ml-16"
