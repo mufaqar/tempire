@@ -13,10 +13,10 @@ export const carsData: Car[] = [
     {
         id: 1,
         link: "#",
-        name: "2015 Dodge Charger SXT 4dr Sdn AWD",
-        image: "/images/car2.png",
+        name: "2023 Ford Mustang Mach E",
+        image: "/images/mach.png",
         seats: 5,
-        transmission: "Automatic",
+        transmission: "Security Deposit Waived, Taxes, Title, License Fees Extra",
     },
    
 ];
