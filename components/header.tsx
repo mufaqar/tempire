@@ -42,35 +42,41 @@ const Header = () => {
                         />
                     </div>
 
-                    <div className="hidden md:flex">
+                    <div className="hidden md:flex gap-10">
                         <Link
                             href="/"
-                            className="text-base font-semibold text-body_text hover:text-primary transition-colors ml-16"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
                             Home
                         </Link>
                         <Link
+                            href="/cars"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
+                        >
+                            Cars
+                        </Link>
+                        <Link
                             href="/about"
-                            className="text-base font-semibold text-body_text hover:text-primary transition-colors ml-16"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
                             About Us
                         </Link>
                         <Link
                             href="/apply"
-                            className="text-base font-semibold text-body_text hover:text-primary transition-colors ml-16"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
                             Apply Now
                         </Link>
 
                         <Link
                             href="/rate-us"
-                            className="text-base font-semibold text-body_text hover:text-primary transition-colors ml-16"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
                             Rate Us
                         </Link>
                         <Link
                             href="/contact"
-                            className="text-base font-semibold text-body_text hover:text-primary transition-colors ml-16"
+                            className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
                             Contact Us
                         </Link>
