@@ -11,18 +11,18 @@ export default function Cars() {
             <section className=" md:pt-[76px] md:pb-[63px] py-[43px] px-4">
                 <div className='container mx-auto'>
                     <h2 className="md:text-5xl md:leading-[1.25] font-bold text-2xl trackind-wide text-heading mb-10 text-center">
-                        Shop TEMPIRE®
+                        SHOP TEMPIRE®
                     </h2>
                 </div>
                 <div className="items-center container mx-auto grid md:grid-cols-2 grid-cols-1 gap-10">
                     <div>
                         <h2 className="md:text-4xl md:leading-[1.25] font-bold text-2xl trackind-wide text-heading mb-[29px]">
-                            No Hidden Costs, Just Pure Convenience
+                            Transparent Pricing, Total Convenience
                         </h2>
                         <div className="md:w-[80%] w-full">
                             <p className="text-sm font-medium leading-[2] tracking-wide text-heading mb-10">
-                                Experience stress-free shop toptierpremiumcarrentals at Top-tier Premium Car Rentals, where transparency is our priority. When you book with us, you can enjoy the freedom of no security deposit and no insurance obligations. Say goodbye to hidden costs and unexpected charges, and embrace the simplicity of our booking process. Your satisfaction is our goal, and we aim to make your journey with us as seamless and straightforward as possible.
-                            </p>
+                           Experience stress-free car rentals with Tempire, where transparency is our promise. Enjoy the freedom of no security deposits and no insurance obligations. Say goodbye to hidden fees and unexpected charges, and embrace the simplicity of our seamless booking process. Your satisfaction is our priority—we’re here to make your journey smooth, straightforward, and worry-free.
+                           </p>
                             <Link href="#contact-us" className="text-base font-semibold bg-primary text-white border border-primary hover:bg-transparent hover:text-primary rounded-[3px] py-[13.5px] px-[45px] flex w-fit">
                                 Book here
                             </Link>
@@ -45,8 +45,7 @@ export default function Cars() {
                     <div>
                         <div className="md:w-[80%] w-full">
                             <p className="text-sm font-medium leading-[2] tracking-wide text-heading mb-10">
-                                Experience stress-free shop toptierpremiumcarrentals at Top-tier Premium Car Rentals, where transparency is our priority. When you book with us, you can enjoy the freedom of no security deposit and no insurance obligations. Say goodbye to hidden costs and unexpected charges, and embrace the simplicity of our booking process. Your satisfaction is our goal, and we aim to make your journey with us as seamless and straightforward as possible.
-                            </p>
+                           Enjoy a stress-free rental experience with Tempire, where transparency is our top priority. Book with confidence knowing there are no security deposits or insurance obligations. Say goodbye to hidden fees and surprise charges, and enjoy the simplicity of our hassle-free booking process. Your satisfaction is at the heart of everything we do, and we’re here to make your journey as smooth and seamless as possible.  </p>
                             <Link href="/contact" className="text-base font-semibold bg-primary text-white border border-primary hover:bg-transparent hover:text-primary rounded-[3px] py-[13.5px] px-[45px] flex w-fit">
                                 Contact Us
                             </Link>
