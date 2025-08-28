@@ -25,22 +25,7 @@ export const CarsSection = () => {
           ))}
         </div>
 
-        {/* Pagination */}
-        <div className="flex justify-center mt-8 space-x-2">
-          {Array.from({ length: totalPages }, (_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`px-4 py-2 rounded border border-primary ${
-                currentPage === index + 1
-                  ? "bg-primary text-white"
-                  : "bg-transparent text-primary"
-              }`}
-            >
-              {index + 1}
-            </button>
-          ))}
-        </div>
+       
       </div>
     </section>
   );
