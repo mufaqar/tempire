@@ -1,26 +1,44 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F8F8F8;
+  --foreground: #f7fbff;
+  --primary: #FDCD60;
+  --body_text: #3B3B3B;
+  --heading: #333333;
+  --light_Pink: #fff5dd;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-body_text: var(--body_text);
+  --color-heading: var(--heading);
+  --color-light_Pink: var(--light_Pink);
+  --font-montserrat: var(--font-geist-montserrat);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.mainSwiper .swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.box {
+  --mask:
+    radial-gradient(61.77px at 50% calc(100% - 84.00px), #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(61.77px at 50% calc(100% + 54.00px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+}
+
+
+.wave-top {
+  --mask:
+    radial-gradient(67.08px at 50% 90.00px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+    radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
 }
