@@ -10,22 +10,55 @@ import "slick-carousel/slick/slick-theme.css";
 import { client } from "@/config/client";
 
 // ✅ Define Review Type
+// ✅ Define Review Type
 interface Review {
+  id: string;
   name: string;
   email?: string;
   position: string;
-  icon?: {
-    asset?: {
-      url: string;
-    };
-  };
+  icon?: string;
   star: number;
   review: string;
 }
-
 const Feedback: React.FC = () => {
   const [reviews, setReviews] = useState<Review[]>([]);
   const sliderRef = useRef<Slider>(null);
+
+  // JSON data instead of API call
+  const feedbackData: Review[] = [
+    {
+      id: "1",
+      name: "Sarah Johnson",
+      position: "Marketing Director",
+      icon: "/images/avatar1.jpg",
+      star: 5,
+      review: "The team exceeded our expectations with their attention to detail and creative solutions. Our engagement increased by 40% after implementing their strategies."
+    },
+    {
+      id: "2",
+      name: "Michael Chen",
+      position: "Product Manager",
+      icon: "/images/avatar2.jpg",
+      star: 4,
+      review: "Solid performance and good communication throughout the project. They delivered on time and within budget. Would work with them again."
+    },
+    {
+      id: "3",
+      name: "Emma Rodriguez",
+      position: "Startup Founder",
+      icon: "/images/avatar3.jpg",
+      star: 5,
+      review: "Absolutely brilliant work! They understood our vision perfectly and executed flawlessly. Our user base has grown exponentially since launch."
+    },
+    {
+      id: "4",
+      name: "James Wilson",
+      position: "CTO",
+      icon: "/images/avatar4.jpg",
+      star: 5,
+      review: "Technical expertise is top-notch. They solved complex problems that had stalled our project for months. Highly recommend for any tech challenges."
+    }
+  ];
 
   // Slick slider settings
   const settings = {
@@ -40,27 +73,9 @@ const Feedback: React.FC = () => {
   const handleNextSlide = () => sliderRef.current?.slickNext();
   const handlePrevSlide = () => sliderRef.current?.slickPrev();
 
-  // Fetch reviews
+   // Set reviews from JSON data
   useEffect(() => {
-    const fetchReview = async () => {
-      try {
-        const reviewData: Review[] = await client.fetch(
-  `*[_type == "rating"] | order(_createdAt desc) {
-    _id,
-    name,
-    email,
-    position,
-    "icon": icon.asset->url,
-    star,
-    review
-  }`
-);
-        setReviews(reviewData);
-      } catch (error) {
-        console.error("Failed to fetch reviews:", error);
-      }
-    };
-    fetchReview();
+    setReviews(feedbackData);
   }, []);
 
   return (
@@ -82,7 +97,7 @@ const Feedback: React.FC = () => {
                     <p className="mt-5 mb-5 text-gray-400 font-montserrat">“{item.review}”</p>
                     <div className="flex items-center gap-4 mt-8">
                       <Image
-                        src={item?.icon?.asset?.url || "/images/bride.jpg"}
+                        src={item?.icon || "/images/bride.jpg"}
                         alt={item.name}
                         width={60}
                         height={60}
