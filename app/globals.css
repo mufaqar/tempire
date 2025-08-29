@@ -42,3 +42,32 @@
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+
+.feature_icon {
+  min-width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 34px;
+  background: var(--primary);
+  border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;
+  animation-name: icon-animat;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+}
+@keyframes icon-animat {
+    0%  {border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;}
+
+    25% {border-radius: 69% 31% 19% 81% / 43% 37% 63% 57%;}
+
+    50% {border-radius: 67% 33% 16% 84% / 57% 37% 63% 43%;}
+
+    75% {border-radius: 77% 23% 61% 39% / 36% 61% 39% 64%;}
+
+    100% {border-radius: 67% 33% 29% 71% / 39% 46% 54% 61%;}
+}

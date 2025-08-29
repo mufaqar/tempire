@@ -18,7 +18,7 @@ export const CarsSection = () => {
   return (
     <section className="md:pt-[76px] md:pb-[63px] py-[43px] px-4 bg-background">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-5 transition-all duration-300 ease-in-out">
+        <div className="grid md:grid-cols-1 grid-cols-1 gap-5 transition-all duration-300 ease-in-out">
           {currentCars.map((car: any, idx: number) => (
             <CarBox key={idx} car={car} />
           ))}
