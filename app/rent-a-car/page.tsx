@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import React from 'react'
 import { FaCarSide, FaTag } from 'react-icons/fa'
-import {  MdOutlinePayment } from 'react-icons/md'
+import { MdOutlinePayment } from 'react-icons/md'
 import { TbBrandBooking } from 'react-icons/tb'
 
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: "Tempire Car Rentals | Premium, Reliable & Hassle-Free Car Hire",
     description:
         "Rent a car with Tempire for a smooth, reliable, and stress-free experience. Affordable rates, premium cars, and easy booking for every journey.",
-       alternates: {
+    alternates: {
         canonical: "https://tempire.space/rent-a-car",
     },
 };
@@ -92,7 +92,7 @@ export default function Cars() {
             </section>
             <CarsSection />
             <CTA />
-            
+
         </>
     )
 }

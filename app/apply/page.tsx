@@ -7,6 +7,9 @@ import React from 'react'
 export const metadata: Metadata = {
   title: "Apply TEMPIRE | Flexible Equipment Financing Solutions for Growing Businesses",
   description: "TEMPIRE allows our clients to make the best decisions.",
+  alternates: {
+        canonical: "https://tempire.space/apply",
+    },
 };
 
 export default function Apply() {

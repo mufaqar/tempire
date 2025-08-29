@@ -6,7 +6,10 @@ export const metadata: Metadata = {
     title: "Contact Us | Tempire",
     description:
         "Get in touch with Tempire for equipment financing solutions. Contact us today to explore flexible financing options for your business.",
-};
+alternates: {
+        canonical: "https://tempire.space/contact",
+    },
+    };
 
 export default function Contact_Us() {
     return (
