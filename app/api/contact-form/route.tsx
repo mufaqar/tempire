@@ -38,7 +38,7 @@ export async function POST(req: Request) {
         // ✅ Send email
         await transporter.sendMail({
             from: process.env.EMAIL_FROM,
-            to: "jaweeriashoukat@gmail.com, mufaqar@gmail.com", // ✅ Fixed typo in gmail
+            to: "mufaqar@gmail.com", // ✅ Fixed typo in gmail
             replyTo: email,
             subject: `Contact Tempire: ${message} by ${name}`,
             html: emailHtml,
