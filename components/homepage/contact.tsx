@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type ContactFormInputs = {
@@ -14,11 +14,13 @@ const Contact: React.FC = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<ContactFormInputs>();
-
-  const onSubmit: SubmitHandler<ContactFormInputs> = async (data:any) => {
+  const [status, setStatus] = useState<{ success: boolean; message: string } | null>(null);
+  const onSubmit: SubmitHandler<ContactFormInputs> = async (data: any) => {
+    setStatus(null);
     try {
-      const res = await fetch("/api/apply", {
+      const res = await fetch("/api/contact-form", {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -26,11 +28,12 @@ const Contact: React.FC = () => {
         },
         body: JSON.stringify(data),
       });
-
+      const result = await res.json();
       if (res.ok) {
-        alert("Message successfully sent!");
+        setStatus({ success: true, message: "Contact Form submitted successfully!" });
+        reset();
       } else {
-        alert("Error! Please try again.");
+        setStatus({ success: false, message: result.error || "Something went wrong." });
       }
     } catch (error) {
       console.error(error);
@@ -113,6 +116,11 @@ const Contact: React.FC = () => {
               All inquiries will be addressed within 24 hours by a Tempire®
               representative.
             </p>
+            {status && (
+              <p className={`mt-4 ${status.success ? "text-green-600" : "text-red-600"}`}>
+                {status.message}
+              </p>
+            )}
           </form>
         </div>
       </div>
