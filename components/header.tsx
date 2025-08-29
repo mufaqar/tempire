@@ -50,10 +50,10 @@ const Header = () => {
                             Home
                         </Link>
                         <Link
-                            href="/cars"
+                            href="/rent-a-car"
                             className="text-base font-semibold text-body_text hover:text-primary transition-colors"
                         >
-                            Cars
+                            Rent a car
                         </Link>
                         <Link
                             href="/about"
@@ -108,6 +108,17 @@ function MobileNav({ open, setOpen }: any) {
                     className="text-xl text-center font-semibold text-body_text hover:text-primary transition-colors mt-10"
                 >
                     Home
+                </Link>
+                <Link
+                    href="/rent-a-car"
+                    onClick={() =>
+                        setTimeout(() => {
+                            setOpen(!open);
+                        }, 100)
+                    }
+                    className="text-xl text-center font-semibold text-body_text hover:text-primary transition-colors mt-10"
+                >
+                    Rent a car
                 </Link>
                 <Link
                     href="/about"

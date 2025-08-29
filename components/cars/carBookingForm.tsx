@@ -32,10 +32,9 @@ const CarBookingForm = () => {
           {...register("carType", { required: true })}
           className="w-full bg-white rounded border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary text-base outline-none text-gray-800 py-2 px-3"
         >
-          <option value="">Select</option>
+         
           <option value="mustang">2023 Ford Mustang Mach-E</option>
-          <option value="tesla">Tesla Model 3</option>
-          <option value="bmw">BMW X5</option>
+         
         </select>
         {errors.carType && <p className="text-red-500 text-sm">Car type is required</p>}
       </div>

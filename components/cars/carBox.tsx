@@ -24,7 +24,7 @@ const CarBox = ({ car }: any) => {
                         <FaOpencart /> 4 Doors
                     </li>
                 </ul>
-                <Link href={`/cars/${car?.link}`} className="text-base font-semibold bg-primary text-white border border-primary hover:bg-transparent hover:text-primary rounded-[3px] py-[13.5px] px-[45px] flex w-fit">
+                <Link href="#book_car" className="text-base font-semibold bg-primary text-white border border-primary hover:bg-transparent hover:text-primary rounded-[3px] py-[13.5px] px-[45px] flex w-fit">
                     Rent now
                 </Link>
             </div>
