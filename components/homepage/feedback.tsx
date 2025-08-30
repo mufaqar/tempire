@@ -7,7 +7,7 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { client } from "@/config/client";
+//import { client } from "@/config/client";
 
 // ✅ Define Review Type
 // ✅ Define Review Type

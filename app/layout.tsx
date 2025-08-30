@@ -9,9 +9,15 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
+
+
 export const metadata: Metadata = {
-  title: "TEMPIRE | May the bridges we build, lead the way.",
-  description: "TEMPIRE® allows our clients to make the best decisions.",
+    title: "TEMPIRE | May the bridges we build, lead the way.",
+    description:
+        "TEMPIRE® allows our clients to make the best decisions.Affordable rates, premium cars, and easy booking for every journey.",
+    alternates: {
+        canonical: "https://tempire.space",
+    },
 };
 
 export default function RootLayout({
