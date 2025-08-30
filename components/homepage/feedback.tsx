@@ -26,39 +26,36 @@ const Feedback: React.FC = () => {
 
   // JSON data instead of API call
   const feedbackData: Review[] = [
-    {
-      id: "1",
-      name: "Sarah Johnson",
-      position: "Marketing Director",
-      icon: "/images/avatar1.jpg",
-      star: 5,
-      review: "The team exceeded our expectations with their attention to detail and creative solutions. Our engagement increased by 40% after implementing their strategies."
-    },
-    {
-      id: "2",
-      name: "Michael Chen",
-      position: "Product Manager",
-      icon: "/images/avatar2.jpg",
-      star: 4,
-      review: "Solid performance and good communication throughout the project. They delivered on time and within budget. Would work with them again."
-    },
-    {
-      id: "3",
-      name: "Emma Rodriguez",
-      position: "Startup Founder",
-      icon: "/images/avatar3.jpg",
-      star: 5,
-      review: "Absolutely brilliant work! They understood our vision perfectly and executed flawlessly. Our user base has grown exponentially since launch."
-    },
-    {
-      id: "4",
-      name: "James Wilson",
-      position: "CTO",
-      icon: "/images/avatar4.jpg",
-      star: 5,
-      review: "Technical expertise is top-notch. They solved complex problems that had stalled our project for months. Highly recommend for any tech challenges."
-    }
-  ];
+  {
+    id: "1",
+    name: "Sarah Johnson",
+    position: "Frequent Business Traveler",
+    star: 5,
+    review: "Booking a car with them was seamless and hassle-free. The vehicle was in perfect condition and delivered on time."
+  },
+  {
+    id: "2",
+    name: "Michael Chen",
+    position: "Weekend Explorer",
+    star: 4,
+    review: "Good service and responsive support. The booking process was smooth, and the car exceeded my expectations."
+  },
+  {
+    id: "3",
+    name: "Emma Rodriguez",
+    position: "Vacation Planner",
+    star: 5,
+    review: "Absolutely excellent experience! The cars are well-maintained and the pickup/drop-off process is very convenient."
+  },
+  {
+    id: "4",
+    name: "James Wilson",
+    position: "Daily Commuter",
+    star: 5,
+    review: "Reliable and professional service. The car was clean, comfortable, and ready exactly when I needed it. Highly recommended!"
+  }
+];
+
 
   // Slick slider settings
   const settings = {
@@ -96,18 +93,12 @@ const Feedback: React.FC = () => {
                     </div>
                     <p className="mt-5 mb-5 text-gray-400 font-montserrat">“{item.review}”</p>
                     <div className="flex items-center gap-4 mt-8">
-                      <Image
-                        src={item?.icon || "/images/bride.jpg"}
-                        alt={item.name}
-                        width={60}
-                        height={60}
-                        className="rounded-full"
-                      />
+                      
                       <div>
                         <h4 className="font-bold text-base capitalize font-montserrat">
                           {item.name}Josef
                         </h4>
-                        <p className="text-heading capitalize font-montserrat">{item.position} Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut praesentium veritatis id reiciendis corporis optio at commodi excepturi nemo earum, officiis atque vitae veniam recusandae architecto quaerat eos dolore!</p>
+                        <p className="text-heading capitalize font-montserrat">{item.position}</p>
                       </div>
                     </div>
                   </div>
